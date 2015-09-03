@@ -1,0 +1,13 @@
+			<div class="side_bar_bg">
+				<ul id="side_bar_nav">
+				  <li><a class="side_bar_a" href="#pocetna" id="pocetna">Početna</a></li>
+				  <li><a class="side_bar_a" href="#korisnici" id="korisnici">Korisnici</a></li>
+				  <li><a class="side_bar_a" href="#saloni" id="saloni">Saloni</a></li>
+				  <li><a class="side_bar_a" href="#kategorije" id="kategorije">Kategorije nameštaja</a></li>
+				  <li><a class="side_bar_a" href="#komadi" id="komadi">Komadi nameštaja</a></li>
+				  <li><a class="side_bar_a" href="#dodatne_usluge" id="dodatne_usluge">Dodatne usluge</a></li>
+				  <li><a class="side_bar_a" href="#akcije" id="akcije">Akcije</a></li>
+				  <li><a class="side_bar_a" href="#izvestaji" id="izvestaji">Izveštaji</a></li>
+				  
+				</ul>
+			</div>

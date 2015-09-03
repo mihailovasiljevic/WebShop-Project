@@ -1,0 +1,1757 @@
+@charset "utf-8";
+/* CSS Document */
+/* LOGIN STRANICA CSS*/
+@font-face {
+    font-family: Raleway_Light;
+    src: url('../fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: Raleway_Medium;
+    src: url('../fonts/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: Raleway_Regular;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+html, body {
+	background: white no-repeat center center
+		fixed;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover; /* Mozilla*/
+	-o-background-size: cover; /* Opera*/
+	background-size: cover; /* Generic*/
+}
+
+#korisnik_login_container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-150px;
+	margin-left:-200px;
+	width:400px;
+	height:300px;
+	background-color:#ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 2.88px rgba(157, 157, 157, 0.2);
+	z-index:999;
+}
+
+#korisnik_username_input{
+	font-family: Raleway_Light;
+	font-size: 18px;
+	color: #dde0e2;
+	position: relative;
+	top: 80px;
+	left: 50px;
+	width: 70%;
+	height: 40px;
+	display: block;
+	border: none;
+	border-color: #dde0e2;
+	border-style: solid;
+	border-width: 2px;
+	border-radius:4px;
+	background-color: transparent;
+	padding-bottom: 0;
+	outline: none;
+	text-indent: 12px;
+}
+#korisnik_username_input:focus,#korisnik_username_input:active {
+	color: #0287cc;
+	border-color: #0287cc;
+}
+#korisnik_username_input::-webkit-input-placeholder {
+    color: #0287cc;
+}
+#korisnik_password_input{
+	font-family: Raleway_Light;
+	font-size: 18px;
+	color: #dde0e2;
+	position: relative;
+	top: 120px;
+	left: 50px;
+	width: 70%;
+	height: 40px;
+	display: block;
+	border: none;
+	border-color: #dde0e2;
+	border-style: solid;
+	border-width: 2px;
+	border-radius:4px;
+	background-color: transparent;
+	padding-bottom: 0;
+	outline: none;
+	text-indent: 12px;
+}
+#korisnik_password_input:focus,#korisnik_password_input:active {
+	color: #0287cc;
+	border-color: #0287cc;
+}
+#korisnik_password_input::-webkit-input-placeholder {
+    color: #0287cc;
+}
+
+.korisnik_login_naslov{
+	font-family: Raleway_Light;
+	font-size: 28px;
+	line-height:1.5;
+	font-weight:bold;
+	color: #0287cc;
+	position:absolute;
+	top:19%;
+	left:39%;
+}
+.korisnik_login_podnaslov{
+	font-family: Raleway_Light;
+	line-height:1.4;
+	font-size: 14px;
+	font-weight:bold;
+	color: #999999;
+	position:absolute;
+	top:25%;
+	left:39%;
+}
+.korisnik_prijavi_se{
+	font-family: Raleway_Light;
+	font-size: 14px;
+	color: white;
+	position: relative;
+	top: 160px;
+	left: 200px;
+	width: 130px;
+	height: 40px;
+	display: block;
+	border: none;
+	background-color: #0287cc;
+	border-radius:4px;
+	outline: none;
+}
+.korisnik_prijavi_se:hover{
+	opacity:0.8;
+	cursor:pointer;
+}
+.korisnik_prazno_username{
+		position: relative;
+	top: -45px;
+	left: 340px;
+	visibility:hidden;
+}
+
+.korisnik_prazno_password{
+	position: relative;
+	top: 0px;
+	left: 340px;
+	visibility:hidden;
+}
+.korisnik_neispravni_podaci{
+	position: relative;
+	top: 10px;
+	left: 30px;
+visibility:hidden;
+}
+/* KRAJ LOGIN STRANICA CSS*/
+
+/* POCETNA STRANICA */
+#container {
+	 text-align: left;
+	 width: 100%;
+     margin: 0 auto;
+	 height:auto;
+}
+
+#wrapper {
+	 text-align: left;
+	 width: 1148px;
+     margin: 0 auto;
+	 height:auto;
+}
+#header {
+  background-color: white;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 62px;
+  z-index: 371;
+  border-bottom: 1px solid #f2f5f8;
+}
+.header_container{
+	margin:0 auto;	
+	width:1148px;
+}
+nav{
+	margin:0 auto;	
+	z-index:890;
+}
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+			display: block;
+	}
+nav ul {
+	padding: 0 20px;
+	list-style: none;
+	position: relative;
+	top:-20px;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+	
+nav ul li {
+	float: left;
+	font-family: Raleway_Light;
+	font-size:14px;
+	color:#a2a2a2;
+}
+	nav ul li:hover {
+		color: #000000;
+	}
+		nav ul li:hover a {
+			color:white;
+			background: #65abd0;
+		}
+	
+	nav ul li a {
+		display: block; padding: 25px 40px;
+		color: #b1b1b1; text-decoration: none;
+	}
+nav ul ul {
+	background: #65abd0; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6ab3d9;
+		border-bottom: 1px solid #6ab3d9;
+		position: relative;
+		color:white;
+		font-family: Raleway_Light;
+	    font-size:14px;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #6ab3d9;
+			}
+nav ul ul ul {
+	position: absolute; left: 100%; top:10px;
+}
+.zavrsi_kupovinu_dugme{
+	  background-color: white;
+  position: relative;
+  left: 1000px;
+  top: -120px;
+  width: 141px;
+  height: 40px;
+}
+button.zavrsiKupovinu{
+  font-family:Raleway_Light;
+  font-size:12px;
+  font-weight:bold;
+  color:white;
+  border-radius: 6px;
+  background-color: #65abd0;
+  position: relative;
+  top:0px;
+  left:0px;
+  width: 140px;
+  height: 36px;
+  z-index: 363;
+  border:none;
+}
+button.zavrsiKupovinu:hover{
+  opacity:0.8;
+  cursor:pointer;
+}
+.shopping_cart_total{
+
+  background-color: white;
+  position: relative;
+  left: 700px;
+  top: -90px;
+  width: 271px;
+  height: 40px;
+}
+.shopping_cart_total img{
+	padding-top:7px;
+	padding-left:10px;	
+}
+.shopping_cart_total p{
+	position:relative;
+	top:-35px;
+	left:50px;	
+	font-family:Raleway_Light;
+	font-size:16px;
+	color:#879999;
+}
+.user_logout{
+  background-color: white;
+  position: relative;
+  left: 1150px;
+  top: -150px;
+  width: 90px;
+  height: 20px;
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:#65abd0;
+}
+.user_logout a{
+	color:#65abd0;
+	text-decoration:none;
+}
+.user_logout a:hover{
+	text-decoration:underline;
+}
+.black_overlay{
+  background-color: black;
+  opacity:0.5;
+  position: relative;
+  left: 0px;
+  top: -440px;
+  width: 100%;
+  height: 440px;
+  z-index: 10;
+}
+#body{
+	margin:0 auto;	
+	position:relative;
+	top:0px;
+	width:1148px;
+	height:auto;
+	z-index:20;
+
+}
+#side_bar{
+	float:left;
+	width: 25%;
+	height: 1024px;
+	background-color:#f2f5f8;
+	display:inline-block;
+}
+#content{
+	float:left;
+	width: 75%;
+	height: auto;
+	background-color:transparent;
+	display:inline-block;
+}
+#komadiNamestaja_pretraga{
+	width:100%;
+	float:left;
+	height:auto;	
+}
+#komadiNamestaja_pretraga .title{
+  padding-left:10px;
+  font-family:Raleway_Light;
+  font-size:22px;
+  font-weight:bold;
+  color:#393635;
+}
+.naziv_kn_label{
+  padding-top:10px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+}
+#naziv_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: #707f87;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6ccd2;
+  background-color: rgb( 255,255,255 );
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:10px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+.cena_od_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+}
+#cena_od_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: #707f87;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6ccd2;
+  background-color: rgb( 255,255,255 );
+  width: 110px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:10px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+.cena_do_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+  left:150px;
+}
+#cena_do_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: #707f87;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6ccd2;
+  background-color: rgb( 255,255,255 );
+  width: 110px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-68px;
+  left:160px;
+  resize:none;
+  display:block;
+}
+
+.kolicina_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+
+}
+#kolicina_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: #707f87;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6ccd2;
+  background-color: rgb( 255,255,255 );
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-65px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+
+.kategorija_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+
+}
+#kategorija_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: white;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9c26c;
+  background-color:#d9c26c;
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-65px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+
+.zemlja_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+
+}
+#zemlja_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: white;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9c26c;
+  background-color:#d9c26c;
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-65px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+
+.godina_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+
+}
+#godina_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: white;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9c26c;
+  background-color:#d9c26c;
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-65px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+
+.boja_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+
+}
+#boja_kn_input{
+  font-size: 14px;
+  font-family:Raleway_Light;
+  font-weight:100;
+  color: white;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9c26c;
+  background-color:#d9c26c;
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-65px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+
+.nazivp_kn_label{
+  padding-top:20px;
+  padding-left:14px;
+  font-family:Raleway_Light;
+  font-size:16px;
+  font-weight:600;
+  color:#b4bbc2;
+  display:block;
+  position:relative;
+  top:-77px;
+
+}
+#nazivp_kn_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: white;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9c26c;
+  background-color:#d9c26c;
+  width: 260px;
+  height: 34px;
+  resize: none;
+  position:relative;
+  top:-65px;
+  left:10px;
+  resize:none;
+  display:block;
+}
+.trazi{
+  background-color: #65abd0;
+  position: relative;
+  top:-55px;
+  left:160px;
+  width: 110px;
+  height: 40px;
+  z-index: 83;
+  border:none;
+  border-radius:8px;
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color:white;
+}
+.trazi:hover{
+  opacity:0.8;
+  cursor:pointer;
+}
+#content div{
+	margin:10px;
+	float:left;
+	height:294px;
+    width:31%;
+	background-color:#f2f5f8;
+	border-radius:6px;
+	display:inline-block;
+	font-family:Raleway_Light;
+}
+
+#content div .kn_title{
+	font-family:Raleway_Light;
+	font-size:18px;
+	font-weight:800;
+	color:#393635;
+	padding-left:10px;
+}
+#content div img{
+	width:92%;
+	height:50%;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	border: 11px solid #fff;
+}
+#content div .akcija{
+	width:61px;
+	height:60px;
+	border-radius:none;
+	border: none;
+	position:relative;
+	top:-225px;
+	visibility:hidden;
+}
+#content div .kn_cena{
+	font-family:Raleway_Light;
+	font-size:16px;
+	color:#b4bbc2;
+	padding-left:10px;
+	position:relative;
+	top:-80px;
+}
+#content div .kn_cena strong{
+	color:#393635;
+}
+#content div .kn_opsirnije{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: rgb(101, 171, 208);
+  position: relative;
+  top:-115px;
+  left:160px;
+  width: 90px;
+  height: 22px;
+  border:none;
+}
+
+#content div .kn_opsirnije:hover{
+  opacity:0.8;
+  cursor:pointer;
+}
+#content div .kn_kupi {
+  font-family:Raleway_Light;
+  font-size:16px;
+  color:#556a00;
+  font-weight:bold;
+  border-radius: 6px;
+  background-color: #b3e000;
+  position: relative;
+  top:-105px;
+  left:10px;
+  width: 244px;
+  height: 36px;
+  z-index: 363;
+  border:none;
+  background-image:url(../images/toCart.png);
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+#content div .kn_kupi:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+
+/* KRAJ POCETNE STRANICE */
+
+/* OPSIRNIJE DIJALOG */
+#dialog_black_background{
+	 visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 900;
+     background-color: black;
+     opacity: 0.5;
+}
+
+#opsirnije_container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-250px;
+	margin-left:-400px;
+	width:800px;
+	height:500px;
+	background-color:#f2f5f8;
+    border-radius: 8px;
+    /*box-shadow: 0px 0px 13.12px 2.88px rgba(157, 157, 157, 0.32);*/
+	z-index:999;
+}
+.exit_opsirnije{
+	position:relative;
+	left:760px;
+	font-family: Raleway_Light;
+	font-size:32px;
+	color:#CCCCCC;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.exit_opsirnije:hover{
+	color:#FF0000;
+	cursor:pointer;
+}
+.big_image_opsirnije{
+	width:300px;
+	height:225px;
+	display:block;
+	position:relative;
+	top:10px;
+	left:50px;
+	border-radius:6px;
+}
+.small_image_opsirnije{
+	width:64px;
+	height:64px;
+	display:block;
+	position:relative;
+	top:30px;
+	left:50px;
+	border-radius:6px;
+	border:2px solid #f2f5f8;
+}
+.small_image_opsirnije:hover{
+	cursor:pointer;
+	border:2px solid #65abd0;
+}
+.big_video_opsirnije{
+	width:300px;
+	height:225px;
+	display:block;
+	position:relative;
+	top:-282px;
+	left:50px;
+	border-radius:6px;
+	visibility:hidden;
+}
+.small_video_opsirnije{
+	width:64px;
+	height:64px;
+	display:block;
+	position:relative;
+	top:-262px;
+	left:124px;
+	border-radius:6px;
+	border:2px solid #f2f5f8;
+}
+.small_video_opsirnije:hover{
+	cursor:pointer;
+	border:2px solid #65abd0;
+}
+
+.naziv_opsirnije{
+	position:relative;
+	top:-600px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:32px;
+	font-weight:bold;
+	color:#383737;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.sifra_opsirnije{
+	position:relative;
+	top:-620px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.boja_opsirnije{
+	position:relative;
+	top:-630px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.zemlja_opsirnije{
+	position:relative;
+	top:-640px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.proizvodjac_opsirnije{
+	position:relative;
+	top:-650px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.cena_opsirnije{
+	position:relative;
+	top:-660px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.kolicina_opsirnije{
+	position:relative;
+	top:-670px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.kategorija_opsirnije{
+	position:relative;
+	top:-680px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.godina_opsirnije{
+	position:relative;
+	top:-690px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.salon_opsirnije{
+	position:relative;
+	top:-700px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:16px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.kolicina_opsirnije_label{
+	position:relative;
+	top:-700px;
+	left:400px;
+	font-family: Raleway_Light;
+	font-size:20px;
+	font-weight:500;
+	color:#b4bbc2;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+#kolicina_opsirnije_input{
+  font-size: 14px;
+  font-family: Raleway_Light;
+  font-weight:100;
+  color: #707f87;
+  border-radius:8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6ccd2;
+  background-color: rgb( 255,255,255 );
+  width: 110px;
+  height: 34px;
+  resize: none;
+	position:relative;
+	top:-700px;
+	left:400px;
+  resize:none;
+  display:block;
+}
+.opsirnije_dodaj {
+  font-family:Raleway_Light;
+  font-size:16px;
+  color:#556a00;
+  font-weight:bold;
+  border-radius: 6px;
+  background-color: #b3e000;
+	position:relative;
+	top:-740px;
+	left:530px;
+  width: 244px;
+  height: 36px;
+  z-index: 363;
+  border:none;
+  background-image:url(../images/toCart.png);
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+.opsirnije_dodaj:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+#kolicina_greska{
+		  font-size: 14px;
+  font-family: "Raleway";
+  font-weight:bold;
+  color: red;
+	position:relative;
+	top:-710px;
+	left:400px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+	background-color:#FFCCFF;
+	width: 298px;
+	visibility: hidden;
+}
+/* KRAJ OPSIRNIJE DIJALOGA */
+
+/* ERROR DIJALOG */
+.dialog_warning_container{
+
+  background-color: rgb(231, 76, 60);
+  position: absolute;
+  left:50%;
+  top: 50%;
+  margin-top:-92px;
+  margin-left:-268px;
+  width: 516px;
+  height: 184px;
+  z-index: 4;
+  border-radius:5px;
+    z-index: 999;		
+}
+.dialog_header_container {
+  background-color: rgb(212, 70, 55);
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 516px;
+  height: 68px;
+  border-radius:5px;
+  z-index: 5;
+  display:block;
+}
+.dialog_header_title {
+  font-size: 22px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  line-height: 2.727;
+  font-weight:bold;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  top: 0px;
+  z-index: 7;
+  display:inline;
+}
+.dialog_header_exit {
+  font-size: 22px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  line-height: 2.727;
+  font-weight:bold;
+  text-align: left;
+  position: relative;
+  left: 310px;
+  top: 5px;
+  z-index: 7;
+  display:inline;
+}
+.dialog_header_exit:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+.dialog_body_container {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 516px;
+  height: 115px;
+  z-index: 5;
+  display:block;
+}
+.dialog_body_txt{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight:bolder;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: 7;
+  display:inline;
+}
+.dialog_warning_nastavi{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  background-color: rgb(179, 56, 44);
+  position: relative;
+  left: 80px;
+  top: 50px;
+  width: 101px;
+  height: 41px;
+  z-index: 10;
+  border:none;
+}
+.dialog_warning_nastavi:hover{
+  opacity:0.6;
+  cursor:pointer;
+}
+.dialog_warning_odustani{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  background-color: rgb(179, 56, 44);
+  position: relative;
+  left: 85px;
+  top: 50px;
+  width: 101px;
+  height: 41px;
+  z-index: 10;
+  border:none;
+}
+.dialog_warning_odustani:hover{
+  opacity:0.6;
+  cursor:pointer;
+}
+/* KRAJ ERROR DIJALOGA */
+
+/* ERROR SUCCESS */
+.dialog_success_container{
+
+  background-color: #93ca00;
+  position: absolute;
+  left:50%;
+  top: 50%;
+  margin-top:-92px;
+  margin-left:-268px;
+  width: 516px;
+  height: 184px;
+  z-index: 4;
+  border-radius:5px;
+    z-index: 999;		
+}
+.dialog_success_container .dialog_header_container {
+  background-color: #6c9302;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 516px;
+  height: 68px;
+  border-radius:5px;
+  z-index: 5;
+  display:block;
+}
+.dialog_success_container .dialog_header_title {
+  font-size: 22px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  line-height: 2.727;
+  font-weight:bold;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  top: 0px;
+  z-index: 7;
+  display:inline;
+}
+.dialog_success_container .dialog_header_exit {
+  font-size: 22px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  line-height: 2.727;
+  font-weight:bold;
+  text-align: left;
+  position: relative;
+  left: 310px;
+  top: 5px;
+  z-index: 7;
+  display:inline;
+}
+.dialog_success_container .dialog_header_exit:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+.dialog_success_container .dialog_body_container {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 516px;
+  height: 115px;
+  z-index: 5;
+  display:block;
+}
+.dialog_success_container .dialog_body_txt{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight:bolder;
+  text-align: center;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: 7;
+  display:inline;
+}
+.dialog_success_container .dialog_warning_nastavi{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  background-color: rgb(179, 56, 44);
+  position: relative;
+  left: 80px;
+  top: 50px;
+  width: 101px;
+  height: 41px;
+  z-index: 10;
+  border:none;
+}
+.dialog_success_container .dialog_warning_nastavi:hover{
+  opacity:0.6;
+  cursor:pointer;
+}
+.dialog_success_container .dialog_success_odustani{
+  font-size: 14px;
+  font-family: "Raleway";
+  color: #476100;
+  border-radius: 4px;
+  background-color: rgb(179, 56, 44);
+  position: relative;
+  left: 85px;
+  top: 50px;
+  width: 101px;
+  height: 41px;
+  z-index: 10;
+  border:none;
+}
+.dialog_success_container .dialog_success_odustani:hover{
+  opacity:0.6;
+  cursor:pointer;
+}
+/* KRAJ SUCCESS DIJALOGA */
+
+/* DIJALOG ZA BESPLATNE USLUGE */
+#besplatne_du_show{
+	position:absolute;
+	top:10%;
+	left:25%;
+	width:900px;
+	height:autopx;
+	background-color:white;
+    border-radius: 8px;
+    /*box-shadow: 0px 0px 13.12px 2.88px rgba(157, 157, 157, 0.32);*/
+	z-index:999;
+}
+
+#besplatne_du_show div{
+	margin:10px;
+	float:left;
+	height:300px;
+    width:31%;
+	background-color:#f2f5f8;
+	border-radius:6px;
+	display:inline-block;
+	font-family:Raleway_Light;
+}
+#besplatne_du_show div .besplatne_du_title{
+	font-family:Raleway_Light;
+	font-size:18px;
+	font-weight:800;
+	color:#393635;
+	padding-left:10px;
+}
+
+#besplatne_du_show div .besplatne_du_opis{
+	font-family:Raleway_Light;
+	font-size:16px;
+	color:#b4bbc2;
+	padding-left:10px;
+	position:relative;
+	top:0px;
+	left:20px;
+	word-break: break-all;
+	width:80%;
+	height:200px;
+	max-width:80%;
+	max-height: 200px;
+	overflow-y: scroll;
+	text-align:left;
+}
+#besplatne_du_show div .besplatne_du_kupi {
+  font-family:Raleway_Light;
+  font-size:16px;
+  color:#556a00;
+  font-weight:bold;
+  border-radius: 6px;
+  background-color: #b3e000;
+  position: relative;
+  top:-10px;
+  left:0px;
+  width: 244px;
+  height: 36px;
+  z-index: 363;
+  border:none;
+  background-image:url(images/toCart.png);
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+#besplatne_du_show div .besplatne_du_kupi:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+.exit_besplatne_du_show{
+	position:relative;
+	top:5px;
+	left:840px;
+	font-family: Raleway_Light;
+	font-size:32px;
+	color:#CCCCCC;
+	border:none;
+	background-color:transparent;
+	display:block;
+}
+.exit_besplatne_du_show:hover{
+	color:#FF0000;
+	cursor:pointer;
+}
+/* KRAJ DIJALOGA ZA BESPLATNE USLUGE*/
+/*ShoppingCart ikonica u vrhu*/
+.shopping_cart_total ul ul {
+	display: none;
+}
+
+	.shopping_cart_total ul li:hover > ul {
+			display: block;
+	}
+.shopping_cart_total ul {
+	padding: 0 0px;
+	margin:0 auto;
+	list-style: none;
+	position: relative;
+	top:-24px;
+	display: inline-table;
+}
+	.shopping_cart_total ul:after {
+		content: ""; clear: both; display: block;
+	}
+	
+.shopping_cart_total ul li {
+	float: left;
+	font-family: Raleway_Light;
+	font-size:14px;
+	color:white;
+}
+	.shopping_cart_total ul li:hover {
+		color: white;
+	}
+		.shopping_cart_total ul li:hover a {
+			color:white;
+			background: white;
+			height:28px;
+			width:140px;
+		}
+	
+	.shopping_cart_total ul li a {
+		display: block; padding: 25px 40px;
+		color: #b1b1b1; text-decoration: none;
+	}
+.shopping_cart_total ul ul {
+	background: white; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	.shopping_cart_total ul ul li {
+		float: none; 
+
+		position: relative;
+		color:white;
+		font-family: Raleway_Light;
+	    font-size:14px;
+		height:150px;
+		width: 260px;
+		border:1px #f2f5f8 solid;
+		padding-left:10px;
+
+	}
+		.shopping_cart_total ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			.shopping_cart_total ul ul li a:hover {
+				background: white;
+			}
+.shopping_cart_total ul ul ul {
+	position: absolute; left: 100%; top:10px;
+}
+
+.shopping_cart_total div .sc_image{
+	display:inline-block;
+	position:relative;
+	top:5px;
+	width:64px;
+	height:64px;
+	padding:2px;
+	border: 1px solid #CCCCCC
+}
+.shopping_cart_total div .sc_title{
+	display:inline-block;
+	position:relative;
+	top:-38px;
+	left:12px;
+	color: #000;
+}
+.shopping_cart_total div .sc_br_komada{
+	display:inline-block;
+	position:relative;
+	top:-65px;
+	left:85px;
+	color: #000;
+}
+.shopping_cart_total div .sc_cena{
+	display:inline-block;
+	position:relative;
+	top:-80px;
+	left:0px;
+	color: #000;
+}
+.shopping_cart_total div .sc_cena strong{
+	color:#00CCFF;	
+}
+.shopping_cart_total div .sc_ukloni_jedan{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  position: relative;
+  top:-85px;
+  left:0px;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.7;
+}
+.shopping_cart_total div .sc_ukloni_jedan:hover{
+  opacity:1;
+  cursor:pointer;
+}
+.shopping_cart_total div .sc_ukloni_sve{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  position: relative;
+  top:-85px;
+  left:70px;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.8;
+  cursor:pointer;
+    opacity:0.7;
+}
+.shopping_cart_total div .sc_ukloni_sve:hover{
+  opacity:1;
+  cursor:pointer;
+}
+
+.sc_du_title{
+	display:inline-block;
+	position:relative;
+
+	padding-top:20px;
+	padding-left:-30px;
+	top:0px;
+	left:-20px;
+	color: #000;
+	width:100%;
+}
+ .sc_du_opis{
+	display:inline-block;
+	position:relative;
+	top:30px;
+	left:-75px;
+	color: #000;
+	width:80%;
+	height:40px;
+	max-width:80%;
+	max-height: 40px;
+	overflow-y: scroll;
+	text-align:left;
+}
+
+.sc_ukloni_jedan_du{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  position: relative;
+  top:-40px;
+  padding-top:0px;
+  left:0px;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.7;
+}
+.sc_ukloni_jedan_du:hover{
+  opacity:1;
+  cursor:pointer;
+}
+.sc_ukloni_sve_du{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  position: relative;
+  top:20px;
+  left:70px;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.8;
+  cursor:pointer;
+    opacity:0.7;
+	visibility:hidden;
+}
+.uspesnoDodato{
+	position:relative;
+	top:-198px;
+	left:1155px;
+	width:183px;
+	height:24px;
+	z-index:999;	
+	background-image:url(../images/dodato.png);
+	visibility: hidden;
+}
+/*KRAJ*/
+
+/* DODATNE USLUGE!*/
+.besplatne_du_title{
+	font-family:Raleway_Light;
+	font-size:18px;
+	font-weight:800;
+	color:#393635;
+	padding-left:10px;
+}
+
+div .besplatne_du_opis{
+	font-family:Raleway_Light;
+	font-size:16px;
+	color:#b4bbc2;
+	padding-left:10px;
+	position:relative;
+	top:0px;
+	left:20px;
+	word-break: break-all;
+	width:80%;
+	height:180px;
+	max-width:80%;
+	max-height: 200px;
+	overflow-y: scroll;
+	text-align:left;
+}
+div .besplatne_du_cena{
+	font-family:Raleway_Light;
+	font-size:14px;
+	font-weight:bold;
+	color:red;
+	padding-left:10px;
+	position:relative;
+	top:0px;
+	left:20px;
+	text-align:left;
+}
+.naplatne_du_kupi {
+  font-family:Raleway_Light;
+  font-size:16px;
+  color:#556a00;
+  font-weight:bold;
+  border-radius: 6px;
+  background-color: #b3e000;
+  position: relative;
+  top:-10px;
+  left:0px;
+  width: 244px;
+  height: 36px;
+  z-index: 363;
+  border:none;
+  background-image:url(../images/toCart.png);
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+.naplatne_du_kupi:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+/* KRAJ DODATNIH USLUGA!*/
+/*TABELA*/
+.tabela_sa_podacima_o_kupovini{
+	margin:none;
+	float:none;
+	height:auto;
+    width:80%;
+	background-color:#f2f5f8;
+	border-radius:6px;
+	font-family:Raleway_Light;
+	position:relative;
+	top:100px;
+	left:350px;
+	paddin:20px;
+	text-align:left;
+}
+.tabela_sa_podacima_o_kupovini table{
+	position:absolute;
+	top:0px;
+	left:60px;
+	height:auto;
+	width:80%;
+	background-color:#f2f5f8;
+	border-collapse:collapse;
+    empty-cells: show;
+	
+}
+
+.tabela_sa_podacima_o_kupovini thead th{
+	height:90px;
+	border-bottom: 3px solid #b4bbc2;
+	width:auto;
+	color:#b4bbc2;
+	text-align:left;
+    padding-left:20px;
+}
+.tabela_sa_podacima_o_kupovini tbody tr{
+	height:90px;
+	border-bottom: 3px solid #b4bbc2;
+	width:auto;
+	color:#b4bbc2;
+	text-align:left;
+	padding-left:20px;
+}
+.tabela_sa_podacima_o_kupovini tbody td{
+	padding-left:20px;
+	color:#383737;
+	font-weight:bold;
+}
+td .ukloni_jedan_iz_prikaza{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.7;
+}
+td .ukloni_jedan_iz_prikaza:hover{
+  opacity:1;
+  cursor:pointer;
+}
+td .ukloni_sve_iz_prikaza{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.7;
+}
+td .ukloni_sve_iz_prikaza:hover{
+  opacity:1;
+  cursor:pointer;
+}
+
+td .ukloni_jedan_iz_prikaza_du{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.7;
+}
+td .ukloni_jedan_iz_prikaza_du:hover{
+  opacity:1;
+  cursor:pointer;
+}
+td .ukloni_sve_iz_prikaza_du{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:white;
+  font-weight:800;
+  border-radius: 6px;
+  background-color: red;
+  width: 90px;
+  height: 32px;
+  border:none;
+  opacity:0.7;
+}
+td .ukloni_sve_iz_prikaza_du:hover{
+  opacity:1;
+  cursor:pointer;
+}
+td .kupi_dugme_iz_prikaza{
+  font-family:Raleway_Light;
+  font-size:14px;
+  color:white;
+  font-weight:bold;
+  border-radius: 6px;
+  background-color: #3399FF;
+  width: 120px;
+  height: 32px;
+  border:none;
+  opacity:1;
+}
+td .kupi_dugme_iz_prikaza:hover{
+  opacity:0.7;
+  cursor:pointer;
+}
+.idi_nazad_iz_prikaza_korpe{
+  font-family:Raleway_Light;
+  font-size:12px;
+  color:#333333;
+  font-weight:bold;
+}
+.idi_nazad_iz_prikaza_korpe:hover{
+  color:#000000;
+}
+
+/*kraj tabele*/

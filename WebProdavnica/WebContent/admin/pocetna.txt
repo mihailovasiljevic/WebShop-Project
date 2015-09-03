@@ -1,0 +1,9 @@
+			<div id="donut_chart">
+				<div class="title">Statistika prodaje</div>
+				<div id="donutchart"></div>
+			</div>
+			
+			<div id="core_chart">
+				<div class="title">Uspešnost poslovanja</div>
+				<div id="corechart"></div>
+			</div>

@@ -1,0 +1,645 @@
+@CHARSET "UTF-8";
+
+html, body {
+	background: url("../images/background.png") no-repeat center center
+		fixed;
+	-webkit-background-size: cover; /* For WebKit*/
+	-moz-background-size: cover; /* Mozilla*/
+	-o-background-size: cover; /* Opera*/
+	background-size: cover; /* Generic*/
+}
+
+div#login_panel {
+	background-image: url("../images/login_background.png");
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 520px;
+	height: 306px;
+	margin-top: -153px;
+	margin-left: -260px;
+	z-index: 4;
+}
+
+div#login_panel .heading {
+	font-family: "Raleway";
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	line-height: 0.567;
+	position: absolute;
+	top: -100px;
+	left: 48px;
+}
+
+div#login_panel .sub_heading {
+	font-family: "Raleway";
+	font-size: 14px;
+	color: rgb(197, 197, 197);
+	line-height: 1.214;
+	position: absolute;
+	top: -55px;
+	left: 48px;
+}
+
+div#login_panel #korisnik {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	line-height: 0.567;
+	position: absolute;
+	top: 60px;
+	left: 100px;
+	width: 58%;
+	height: 30px;
+	display: block;
+	border: none;
+	border-bottom-color: #3f4655;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	background-color: transparent;
+	padding-bottom: 0;
+	outline: none;
+	background-image: url('../images/korisnik_input_background.png');
+	text-indent: 32px;
+}
+
+div#login_panel #korisnik {
+	
+}
+
+div#login_panel #korisnik:focus, #korisnik.focus {
+	border-bottom: solid 2px #545e72;
+}
+
+div#login_panel #korisnik:focus {
+	outline: none;
+}
+
+div#login_panel #lozinka {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	line-height: 0.567;
+	position: absolute;
+	top: 140px;
+	left: 100px;
+	width: 58%;
+	height: 30px;
+	display: block;
+	border: none;
+	border-bottom-color: #3f4655;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	background-color: transparent;
+	padding-bottom: 0;
+	outline: none;
+	background-image: url('../images/lozinka_input_background.png');
+	text-indent: 32px;
+}
+
+div#login_panel #lozinka {
+	
+}
+
+div#login_panel #lozinka:focus, #lozinka.focus {
+	border-bottom: solid 2px #545e72;
+}
+
+div#login_panel #lozinka:focus {
+	outline: none;
+}
+
+div#login_panel ::-webkit-input-placeholder { /* WebKit browsers */
+	padding-top: 5px;
+	font-family: "Raleway";
+	font-size: 18px;
+	color: #3f4655;
+	text-overflow: ellipsis;
+}
+
+div#login_panel :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	padding-top: 5px;
+	font-family: "Raleway";
+	font-size: 18px;
+	color: #3f4655;
+	text-overflow: ellipsis;
+	opacity: 1;
+}
+
+div#login_panel ::-moz-placeholder { /* Mozilla Firefox 19+ */
+	padding-top: 5px;
+	font-family: "Raleway";
+	font-size: 18px;
+	color: #3f4655;
+	text-overflow: ellipsis;
+	opacity: 1;
+}
+
+div#login_panel :-ms-input-placeholder { /* Internet Explorer 10+ */
+	padding-top: 5px;
+	font-family: "Raleway";
+	font-size: 18px;
+	color: #3f4655;
+	text-overflow: ellipsis;
+}
+
+div#login_panel div.show_password {
+	position: absolute;
+	top: 150px;
+	left: 370px;
+	height: 13px;
+	width: 19px; display : block;
+	background-image: url('../images/show_password_icon.png');
+	display: block;
+}
+
+div#login_panel button.submit_button {
+	font-family: "Raleway";
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	line-height: 1.214;
+	width: 86px;
+	height: 31px;
+	background-color: #15a4fa;
+	border: none;
+	border-radius: 4px;
+	position: absolute;
+	top: 220px;
+	left: 315px;
+}
+
+div#login_panel button.submit_button:hover {
+	font-family: "Raleway";
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	line-height: 1.214;
+	width: 86px;
+	height: 31px;
+	background-color: #4ab7f9;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+div#login_panel a.forgotten_password_link {
+	font-family: "Raleway";
+	font-size: 12px;
+	color: #55b2eb;
+	line-height: 0.2;
+	position: absolute;
+	top: 240px;
+	left: 100px;
+}
+
+div#login_panel a.forgotten_password_link:hover {
+	font-family: "Raleway";
+	font-size: 12px;
+	color: #4fa2d6;
+	line-height: 0.2;
+	position: absolute;
+	top: 240px;
+	left: 100px;
+}
+
+div#login_panel div.empty_username {
+	position: absolute;
+	top: 60px;
+	left: 430px;
+	height: 36px;
+	width: 207px;
+	display: block;
+	background-image: url('../images/empty_field_error.png');
+	display: none;
+}
+
+div#login_panel div.empty_password {
+	position: absolute;
+	top: 140px;
+	left: 430px;
+	height: 36px;
+	width: 207px;
+	display: block;
+	background-image: url('../images/empty_field_error.png');
+	display: none;
+}
+
+div#login_panel div.user_doesnt_exist {
+	position: absolute;
+	top: 180px;
+	left: 80px;
+	height: 36px;
+	width: 314px;
+	display: block;
+	background-image: url('../images/wrong_uname_or_pass.png');
+	display: none;
+}
+
+div#header{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 62px;
+	width: 100%;
+	z-index:201;
+	background-color: #343b48;
+	display: block;
+}
+div#header .header_shadow {
+  background-image: -moz-linear-gradient( -90deg, rgb(0,0,0) 0%, rgba(48,52,64,0) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(0,0,0) 0%, rgba(48,52,64,0) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(0,0,0) 0%, rgba(48,52,64,0) 100%);
+  position: absolute;
+  left: 0px;
+  top: 62px;
+  width: 100%;
+  height: 20px;
+  z-index: 2;
+  opacity: 0.2;
+}
+div#header .logo_store {
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	height: 55px;
+	width: 159px;
+	display: block;
+	background-image: url('../images/logo_store.png');
+}
+div.header_links a.show_site{
+	position: absolute;
+	top: 0px;
+	left: 70%;
+	height: 61px;
+	width: 61px;
+	display: block;
+	background-image: url('../images/see_site_active.png');
+	z-index: 20;
+}
+div.header_links a.show_site:hover{
+	position: absolute;
+	top: 0px;
+	left: 70%;
+	height: 61px;
+	width: 61px;
+	display: block;
+	background-image: url('../images/see_site_hover.png');
+}
+div.header_links a.show_site:VISITED{
+	position: absolute;
+	top: 0px;
+	left: 70%;
+	height: 61px;
+	width: 61px;
+	display: block;
+	border: none;
+	background-image: url('../images/see_site_hover.png');
+}
+
+
+
+/*--- MENI ---*/
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	z-index: 10; 
+	position: absolute;
+	left:74%;
+	top:-10px;
+	margin-left:-6px;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	margin-left:-6px;
+		z-index: 10; 
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	width:300px;
+	height: 61px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Raleway";
+	color: #fff;
+	background-image:url('../images/logged_in_active.png');
+	text-decoration: none;
+	z-index: 10; 
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background-image:url('../images/logged_in_hover.png');
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	font-family: "Raleway";
+	font-size:18px;
+	background: #23272f;
+	color: #575d70;
+	height: 68px;
+	line-height: 68px;
+	border-bottom-color: #353a45;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-indent: 80px;
+
+}
+
+li:hover ul a.moj_nalog {
+	font-family: "Raleway";
+	font-size:18px;
+	background: #23272f;
+	background-image:url("../images/moj_nalog_ico.png");
+	background-repeat:no-repeat;
+
+   background-position:25px center;
+	color: #575d70;
+	height: 68px;
+	line-height: 68px;
+	border-bottom-color: #353a45;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-indent: 80px;
+
+}
+li:hover ul a.moje_poruke {
+	font-family: "Raleway";
+	font-size:18px;
+	background: #23272f;
+	background-image:url("../images/poruke_ico.png");
+	background-repeat:no-repeat;
+
+   background-position:25px center;
+	color: #575d70;
+	height: 68px;
+	line-height: 68px;
+	border-bottom-color: #353a45;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-indent: 80px;
+
+}
+
+/*Hover state for dropdown links*/
+
+
+li:hover ul a.moj_nalog:hover {
+	background: #2f3540;
+background-image:url("../images/moj_nalog_ico.png");
+	background-repeat:no-repeat;
+
+   background-position:25px center;
+}
+li:hover ul a.moje_poruke:hover {
+	background: #2f3540;
+	background-image:url("../images/poruke_ico.png");
+		
+	background-repeat:no-repeat;
+
+   background-position:25px center;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+	z-index: 10; 
+	left:2%;
+	top:74px;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+
+	width: 260px;
+	padding: 0 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+button.odjavi_se {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	line-height: 1.214;
+	width: 287px;
+	height: 46px;
+	background-color: #ed1c24;
+	border: none;
+	border-radius: 4px;
+	position: relative;
+	top:12px;
+	left:-93px;
+}
+button.odjavi_se:hover {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	line-height: 1.214;
+	width: 287px;
+	height: 46px;
+	background-color: #fc4d54;
+	border: none;
+	border-radius: 4px;
+	position: relative;
+	top:12px;
+	left:-93px;
+	cursor:pointer;
+}
+
+div.admin_header_info{
+	position:absolute;
+	top:0px;
+	text-indent:80px;
+	z-index: 15;
+}
+p.admin_header_ime{
+	font-family: "Raleway";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	margin-top: 10px;
+}
+p.admin_header_uloga{
+	font-family: "Raleway";
+	font-size: 12px;
+	font-weight:800;
+	color: #a8ff00;
+	margin-top: -50px;
+	margin-left: -47px;
+}
+
+div.side_bar_bg{
+	position: absolute;
+	top:61px;
+	left:0px;
+	height:93%;
+	width:20%;
+	background-color: #232a3a;
+		
+}
+ul#side_bar_nav{
+	z-index: 20;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: #232a3a;
+    	font-family: "Raleway";
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+
+}
+
+ul#side_bar_nav a.side_bar_a:link, a.side_bar_a:visited {
+    display: block;
+	font-weight:900;
+    color: #FFFFFF;
+    background-color: #232a3a;
+    width:155px;
+    height:41px;
+    text-decoration: none;
+    background-image: url("");
+    top:62px;
+    font-family: "Raleway";
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	padding-left:220px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #141824;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #333a4c;
+}
+
+ul#side_bar_nav a.side_bar_a:hover, a.side_bar_a:active {
+    background-color: #15a4fa;
+}
+#overlay {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+     background-color: black;
+     opacity: 0.2;
+     z-index: 202;
+}
+#overlay div {
+     width:300px;
+     margin: 100px auto;
+     background-color: #fff;
+     border:1px solid #000;
+     padding:15px;
+     text-align:center;
+     z-index: 222;
+     opacity:1;
+}
+#content{
+	position:absolute;
+	top:62px;
+	left:20%;
+	width:80%;
+	height:100;
+	display: inline-block;
+}
+#donutchart{
+	position:relative;
+	top:0px;
+	left:0px;
+	background-color: #323a45;
+	height:200px;
+	width:200px;
+	border-radius: 5px;
+	padding-top: 50px;
+	box-shadow: 0px 0px 8px 6px #2b303a;
+	z-index: 100;
+}
+#content #donut_chart{
+	position:relative;
+	top:60px;
+	left:100px;
+	z-index: 250;
+	font-family: "Raleway";
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	width:200px;
+}
+#donut_chart .title{
+	position:relative;
+	top:35px;
+	left:45px;
+	z-index: 250;
+	font-family: "Raleway";
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	font-weight: 900;
+	width:200px;
+}
+#corechart{
+	position:relative;
+	top:0px;
+	left:0px;
+	background-color: #323a45;
+	height:200px;
+	width:500px;
+	border-radius: 5px;
+	padding-top: 50px;
+	box-shadow: 0px 0px 8px 6px #2b303a;
+	z-index: 100;
+}
+#content #core_chart{
+	position:relative;
+	top:-205px;
+	left:400px;
+	z-index: 250;
+	font-family: "Raleway";
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	width:500px;
+}
+#core_chart .title{
+	position:relative;
+	top:35px;
+	left:45px;
+	z-index: 250;
+	font-family: "Raleway";
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	font-weight: 900;
+	width:500px;
+}
+
+#content #uloge_container{
+	position:relative;
+	top:20px;
+	left:20px;
+	z-index: 250;
+	font-family: "Raleway";
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	width:500px;
+	height:200px;
+}

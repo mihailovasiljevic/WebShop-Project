@@ -1,0 +1,26 @@
+	<div id="header">
+		<div class="header_shadow"></div>
+		<div class="logo_store"></div>
+		<div class="header_links">
+		
+			<a href="../shop/index.jsp" class="show_site"></a>
+			
+			 <ul id="menu">
+
+                <li>
+                   <a href="#"><p class="admin_header_ime">MENADZER</p><p class="admin_header_uloga">MENADZER</p></a>
+
+                        <ul class="hidden">
+
+                                    <li><a href="#"><button type="button" class="odjavi_se">ODJAVI SE</button></a></li>
+                                    <script>
+                                        $('#header').on('click', '.odjavi_se', function(){odjaviSe();});
+                                    </script>
+                        </ul>
+
+                </li>
+
+            </ul>
+
+		</div>
+	</div>

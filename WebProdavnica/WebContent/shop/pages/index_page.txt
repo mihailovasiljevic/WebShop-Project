@@ -1,0 +1,92 @@
+           	<div id='header'>
+            
+                 <div class='header_container'>  
+                 
+                     <nav id="main_navigation">
+                        <ul>
+                            <li id="akcije_meni"><a href='#'>Akcije</a></li>
+                            <li id="kn_meni"><a href='#'>Komadi nameštaja</a></li>
+                            <li id="du_meni"><a href='#'>Dodatne usluge</a> </li>
+                            <li id="korpa_meni"><a href='#'>Korpa</a></li>
+                        </ul>
+                    </nav>                   
+                    
+                    
+                    <div class='shopping_cart_total'>
+           			<ul>
+                        	<li>
+                            	<a href="#"><img src='images/shopping_cart_icon.png' alt='shoppint cart'/>
+                        <p class='ukupno_kosta_u_korpi'>Ukupno: <strong>0</strong></p></a>
+                                <ul class='ovde_idu_li_evi'>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--.shopping_cart_total-->
+                    <div class='zavrsi_kupovinu_dugme'>
+                   		 <button type='button' class='zavrsiKupovinu'>ZAVRŠI KUPOVINU</button>
+                    </div>
+                    <div class='user_logout'>
+                    	<a href="#" id='odjavise_korisnik'><strong>ODJAVITE SE</strong></a>
+                    </div>
+                    
+                 </div><!--#header_container-->
+                 <div class='uspesnoDodato'>
+                 </div>
+            </div><!--#header-->
+            
+    
+    <div id='body'>
+    
+        <div id='side_bar'>
+        	<div id='komadiNamestaja_pretraga'>
+           		<p class='title'>Pretraga komada nameštaja</p>
+                <label for='naziv_kn_input' class='naziv_kn_label'>Naziv:</label>
+                <input type='text' id='naziv_kn_input' />
+                
+                <label for='cena_od_kn_input' class='cena_od_kn_label'>Cena od:</label>
+                <input type='number' id='cena_od_kn_input' value='0' min='0'/>
+                <label for='cena_do_kn_input' class='cena_do_kn_label'>Cena do:</label>
+                <input type='number' id='cena_do_kn_input' min='0'/>
+                
+                <label for='kolicina_kn_input' class='kolicina_kn_label'>Količina:</label>
+                <input type='number' id='kolicina_kn_input' value='0' min='0'/>
+                
+                <label for='kategorija_kn_input' class='kategorija_kn_label'>Kategorija:</label>
+                <select id='kategorija_kn_input'></select>
+                
+                <label for='zemlja_kn_input' class='zemlja_kn_label'>Zemlja proizvodnje:</label>
+                <select id='zemlja_kn_input'></select>
+                
+                <label for='godina_kn_input' class='godina_kn_label'>Godina proizvodnje:</label>
+                <select id='godina_kn_input'></select>
+                
+                <label for='boja_kn_input' class='godina_kn_label'>Boja:</label>
+                <select id='boja_kn_input'></select>
+                
+                <label for='nazivp_kn_input' class='nazivp_kn_label'>Naziv proizvođača:</label>
+                <select id='nazivp_kn_input'></select>
+                
+                <button type='button' class='trazi'>traži</button>
+            </div>
+        </div>
+        
+        <div id='content'>
+        <!--
+        	<div>
+            
+            	<img src='images/slider_1.jpg' />
+            	<p class='kn_title'>a</p>
+                <img src='images/akcija_icon.png' class='akcija'/>
+                <p class='kn_cena'>Cena: <strong></strong> din</p>
+                <button type='button' class='kn_opsirnije'>opЕЎirnije</button>
+                <button type='button' class='kn_kupi'>U korpu</button>
+                
+            </div>
+            -->
+        </div>
+        
+
+        
+        
+    </div>   

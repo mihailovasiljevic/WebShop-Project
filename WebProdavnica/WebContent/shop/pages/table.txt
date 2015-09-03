@@ -1,0 +1,17 @@
+           	<div class='tabela_sa_podacima_o_kupovini'> 
+			
+           	 <table>
+             	<thead>
+                	<tr>
+                    	<th>Naziv </th>
+                   		<th>Količina </th>
+                        <th>Ukupna cena </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id='table_prikaz_body'>
+                </tbody>
+        	</table>
+        	</div>
